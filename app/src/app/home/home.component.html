@@ -1,0 +1,26 @@
+<div class="header">
+  <p>Pergunta<span>ProZé</span></p>
+</div>
+
+<div class="main">
+
+<div class="pergunta">
+  <h5>Pergunta</h5>
+  <textarea class="inputPergunta" name="inputPergunta" id="inputPergunta" placeholder="Digite sua pergunta" [(ngModel)]="pergunta"></textarea>
+  <button type="submit" (click)="enviarPerguntar()">Enviar</button>
+</div>
+
+<div class="loading">
+  {{ loading }}
+</div>
+
+<div class="resposta">
+  <h5>Resposta</h5>
+
+  <textarea class="inputPergunta"  name="inputPergunta" id="inputPergunta" >{{ resposta }}</textarea>
+
+  <button type="submit" (click)="enviarPerguntar()">Copiar</button>
+</div>
+
+
+</div>
